@@ -2,7 +2,10 @@
 
 *** REST API responsible to share the numbers of widget in pre-defined package sizes, and round to up.
 
-I built a basic MVC structure to split the responsibility. I create a Component layer to put my business rules. Basically, the index file is responsible to manage the routes sending the information to Controller layer. There, it sent the data to Component layer and return the result.
+I built a basic MVC structure to split the responsibility. I created a Component layer to put my business rules. 
+Basically, the index file is responsible to manage the routes sending the information to Controller layer. There, it send the data to Component layer and return the result.
+In the Component layer, has an array with pre-defined sizes. It's possible add, remove or modify the existents.
+In test case, I used some invalid values to test the false response.
 
 To test the API, the user need to start a server, and to access the path /stickee ans send a url parameter as bellow:
 
